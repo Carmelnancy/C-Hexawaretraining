@@ -1,0 +1,108 @@
+create database sqlhandson
+
+use sqlhandson
+
+create table DEPT (
+    deptno INT PRIMARY KEY,
+    dname VARCHAR(50),
+    loc VARCHAR(50)
+)
+
+insert into DEPT values (10, 'ACCOUNTING', 'NEW YORK'),
+ (20, 'RESEARCH', 'DALLAS'),
+ (30, 'SALES', 'CHICAGO'),
+ (40, 'OPERATIONS', 'BOSTON')
+
+create table EMP (
+    empno INT PRIMARY KEY,
+    ename VARCHAR(50),
+    job VARCHAR(50),
+    mgr_id INT,
+    hiredate DATE,
+    sal DECIMAL(10, 2),
+    comm DECIMAL(10, 2),
+    deptno INT,
+    FOREIGN KEY (deptno) REFERENCES DEPT(deptno)
+)
+
+insert into EMP values (7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800, NULL, 20),
+(7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600, 300, 30),
+(7521, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250, 500, 30),
+(7566, 'JONES', 'MANAGER', 7839, '1981-04-02', 2975, NULL, 20),
+(7654, 'MARTIN', 'SALESMAN', 7698, '1981-09-28', 1250, 1400, 30),
+(7698, 'BLAKE', 'MANAGER', 7839, '1981-05-01', 2850, NULL, 30),
+(7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450, NULL, 10),
+(7788, 'SCOTT', 'ANALYST', 7566, '1987-04-19', 3000, NULL, 20),
+(7839, 'KING', 'PRESIDENT', NULL, '1981-11-17', 5000, NULL, 10),
+(7844, 'TURNER', 'SALESMAN', 7698, '1981-09-08', 1500, 0, 30),
+(7876, 'ADAMS', 'CLERK', 7788, '1987-05-23', 1100, NULL, 20),
+(7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950, NULL, 30),
+(7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000, NULL, 20),
+(7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, NULL, 10)
+
+select * from EMP
+
+--1
+select * from EMP where ename like 'a%'
+--2
+select ename [Employee Name] from emp where mgr_id is null
+--3
+select ename,empno,sal from emp where sal between 1200 and 1400
+--4
+select * from emp e join DEPT d on e.deptno=d.deptno where d.dname='research'
+-- update EMP set sal=sal*1.10 where deptno=(select deptno from dept where dname='RESEARCH')
+select e.ename,d.dname,sal*1.10 Salary  from EMP e join DEPT d on e.deptno=d.deptno where d.dname='research' --using join
+--5
+select count(job) from emp where job='CLERK'
+--6
+select job,avg(sal) [Avg salary] ,count(ename) [No of employees] from emp group by job
+--7
+select ename,sal from emp where sal=(select max(sal) from emp) or sal=(select min(sal) from emp)
+--8
+select * from dept where deptno not in(select distinct deptno from emp)
+--9
+select ename,sal from emp where job='analyst' and deptno=20 and sal>1200 order by ename 
+--10
+select d.dname ,d.deptno, sum(e.sal) TotalSalary from DEPT d left join EMP e on d.deptno=e.deptno group by d.deptno,d.dname
+--11
+select sal,ename from emp where ename ='miller' or ename='smith'
+--12
+select ename from emp where ename like 'a%' or ename like 'm%'
+--13
+select ename,(sal*12) AnnualSalary from emp where ename='smith'
+--14
+select ename, sal from emp where sal not between 1500 and 2850
+--15
+select mgr_id,count(*) [No of employees] from emp where mgr_id is not null group by mgr_id having count(*)>2
+
+select deptno,sum(sal) from EMP group by(job) ,deptno 
+
+select mgr_id ,count(*) [No of employees] from emp where mgr_id is not null group by mgr_id order by [No of employees]
+
+select e1.ename as 'Employee Name', e2.ename as 'Manager Name' from emp e1 join emp e2
+on e1.empno = e2.mgr_id
+
+--SET 2
+
+--1
+select m.mgr_id,m.ename from emp e join emp m on e.empno=m.mgr_id group by m.ename ,m.mgr_id
+--2
+select ename,sal from EMP where sal>1000
+--3
+select ename,sal from emp where ename<>'james'
+--4
+select * from EMP where ename like 's%'
+--5
+select ename from emp where ename like '%a%'
+--6
+select ename from EMP where ename like '__l%'
+--7
+select sal/30 DailySalary from emp where ename='jones'
+--8
+select sum(sal) as [Total Salary] from emp 
+--9
+select avg(sal)*12 [Average Annual Salary] from emp
+--10
+select ename,job,sal,deptno from emp where empno not in (select empno from emp where deptno=30 and job='salesman')
+--or
+select ename,job,sal,deptno from emp where deptno=30 and job<>'salesman'
