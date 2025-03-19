@@ -85,7 +85,8 @@ insert into Enrollments values
 (8, 8, '2024-04-15'),
 (9, 9, '2024-05-01'),
 (10, 10, '2024-05-10')
-
+insert into Enrollments values
+(6, 1, '2025-01-10')
 select * from Enrollments
 
 insert into Teacher values
@@ -135,6 +136,61 @@ delete from Students where student_id=9
 update Payments set amount=50000 where payment_id=4
 
 --Task 3. Aggregate functions, Having, Order By, GroupBy and Joins:
-
+--1
+select s.student_id,s.first_name,s.last_name ,sum(amount)
+from Students s join Payments p
+on s.student_id=p.student_id
+where s.student_id=4
+group by s.student_id,s.first_name,s.last_name
+--2
+select c.course_id,c.course_name,count(e.student_id) [No of Students enrolled]
+from Courses c left join Enrollments e
+on c.course_id=e.course_id
+group by c.course_id,c.course_name
+--3
+select s.student_id,s.first_name,s.last_name 
+from Students s left join Enrollments e
+on s.student_id=e.student_id
+where e.student_id is null
+--4
+select s.first_name,s.last_name,c.course_name
+from Students s join Enrollments e 
+on s.student_id=e.student_id
+join Courses c
+on c.course_id=e.course_id
+--5
+select t.teacher_id,t.first_name,t.laast_name,c.course_name
+from Teacher t left join Courses c
+on t.teacher_id=c.teacher_id
+--6
+select s.student_id,s.first_name,s.last_name,e.enrollment_date
+from Students s join Enrollments e
+on s.student_id=e.student_id
+join Courses c 
+on e.course_id=c.course_id 
+where c.course_id=4
+--7
+select s.first_name,s.last_name 
+from Students s left join Payments p
+on p.student_id=s.student_id
+where p.payment_id is null
+--8
+select c.course_id,c.course_name 
+from Courses c left join Enrollments e
+on c.course_id=e.course_id
+where e.enrollment_id is null
+--9
+select s.student_id,s.first_name,s.last_name,count(e.course_id) [Courses enrolled]
+from Students s join Enrollments e
+on s.student_id=e.student_id
+group by s.student_id,s.first_name,s.last_name 
+having count(e.course_id) >1
+--or
+SELECT DISTINCT s.student_id, s.first_name, s.last_name FROM Students s JOIN Enrollments e1 ON s.student_id = e1.student_id JOIN Enrollments e2 ON s.student_id = e2.student_id WHERE e1.course_id <> e2.course_id;
+--10
+select t.teacher_id,t.first_name,t.laast_name
+from Teacher t left join Courses c
+on t.teacher_id=c.teacher_id
+where c.teacher_id is null
 
 --Task 4. Subquery and its type:
