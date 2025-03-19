@@ -118,21 +118,21 @@ insert into Payments values
 select * from Payments
 
 -- Tasks 2: Select, Where, Between, AND, LIKE:
-
+--1
 insert into Students 
 values ('John', 'Doe', '1995-08-15', 'john.doe@example.com', '1234567890');
-
+--2
 insert into Enrollments (student_id, course_id, enrollment_date)
 values (11, 1, '2024-03-15');
-
+--3
 update Teacher set email='diana@example.com' where first_name='diana'
-
+--4
 delete from Enrollments where course_id=1 and student_id=11
-
+--5
 update Courses set teacher_id=5 where course_id=7
-
+--6
 delete from Students where student_id=9
-
+--7
 update Payments set amount=50000 where payment_id=4
 
 --Task 3. Aggregate functions, Having, Order By, GroupBy and Joins:
