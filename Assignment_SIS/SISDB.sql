@@ -1,6 +1,7 @@
 -- Task 1. Database Design:
 
 create database SISDB
+drop database SISDB
 
 use SISDB
  
@@ -114,7 +115,8 @@ insert into Payments values
 (8, 4100.00, '2024-04-25'),
 (9, 2900.00, '2024-05-05'),
 (10, 3400.00, '2024-05-15')
-
+update Payments set payment_date='2025-01-20' where payment_id=12
+update Payments set amount='2000' where payment_id=12
 select * from Payments
 
 -- Tasks 2: Select, Where, Between, AND, LIKE:
@@ -186,7 +188,7 @@ on s.student_id=e.student_id
 group by s.student_id,s.first_name,s.last_name 
 having count(e.course_id) >1
 --or
-SELECT DISTINCT s.student_id, s.first_name, s.last_name FROM Students s JOIN Enrollments e1 ON s.student_id = e1.student_id JOIN Enrollments e2 ON s.student_id = e2.student_id WHERE e1.course_id <> e2.course_id;
+--SELECT DISTINCT s.student_id, s.first_name, s.last_name FROM Students s JOIN Enrollments e1 ON s.student_id = e1.student_id JOIN Enrollments e2 ON s.student_id = e2.student_id WHERE e1.course_id <> e2.course_id;
 --10
 select t.teacher_id,t.first_name,t.laast_name
 from Teacher t left join Courses c
@@ -194,3 +196,64 @@ on t.teacher_id=c.teacher_id
 where c.teacher_id is null
 
 --Task 4. Subquery and its type:
+--1
+select c.course_id,c.course_name,avg(e.co) as [Average Students enrolled]
+from  
+(select course_id,count(student_id) co from Enrollments group by course_id) as e
+right join Courses c
+on c.course_id=e.course_id
+group by c.course_id,c.course_name
+--2
+select * from Students
+where student_id= (select student_id from Payments p1 where amount=(select max(amount) from Payments ))
+--3
+select course_id, course_name
+from Courses
+where course_id = 
+(select top 1 course_id from Enrollments
+group by course_id
+order by COUNT(student_id) desc)
+--4
+select t.teacher_id,t.first_name,t.laast_name,
+(select sum(p.amount) from Payments p join Enrollments e
+on  e.student_id=p.student_id join Courses c
+on c.course_id=e.course_id
+where c.teacher_id=t.teacher_id) as TotalPayment from teacher t
+--5
+select e.student_id,s.first_name,s.last_name from Enrollments e join Students s
+on e.student_id=s.student_id
+ group by e.student_id,s.first_name,s.last_name having count(e.course_id)=(select COUNT(c.course_id) from Courses c)
+--6
+select t1.teacher_id,t1.first_name,t1.laast_name  from teacher t1
+where t1.teacher_id not in(select t.teacher_id from Teacher t join Courses c
+on t.teacher_id=c.teacher_id)
+--7
+select avg(s.age) [Average age] from 
+(select DATEDIFF(year,date_of_birth,getdate()) [age] from Students) s
+--8
+select c.course_id,c.course_name from Courses c
+where course_id not in (select e.course_id from Enrollments e group by e.course_id) 
+--9
+select p.student_id,c.course_id,c.course_name,sum(p.amount) from Payments p join Enrollments e 
+on p.student_id=e.student_id
+join Courses c
+on c.course_id=e.course_id
+group by c.course_id,c.course_name,p.student_id
+order by p.student_id
+--10
+select s.student_id,s.first_name,s.last_name,count(p.payment_id) [No of Payments made] from Students s inner join Payments p
+on s.student_id=p.student_id
+group by s.student_id,s.first_name,s.last_name
+having count(p.payment_id)>1
+--11
+select s.student_id,s.first_name,s.last_name,sum(p.amount) [Amount paid] from Students s join Payments p 
+on p.student_id=s.student_id
+group by s.student_id,s.first_name,s.last_name
+--12
+select c.course_id,c.course_name,count(e.course_id) [Students enrolled] from Courses c left join Enrollments e
+on e.course_id=c.course_id
+group by c.course_id,c.course_name
+--13
+select s.student_id,s.first_name,s.last_name,avg(amount) [Average amount paid] from Payments p join Students s
+on p.student_id=s.student_id
+group by s.student_id,s.first_name,s.last_name
