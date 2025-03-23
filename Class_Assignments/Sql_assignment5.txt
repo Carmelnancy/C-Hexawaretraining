@@ -1,0 +1,17 @@
+--SET 4
+ 
+use sqlhandson
+
+--1
+select ename from emp where sal>
+(select sal from EMP where empno=7566)
+--2
+select ename,deptno,job from emp
+where job=
+(select job from emp where empno=7876)
+--3
+select ename,empno ,sal from emp
+where mgr_id in 
+(select e2.empno from emp e1 join emp e2
+on e1.mgr_id=e2.empno
+where e2.ename like '[bc]%')
