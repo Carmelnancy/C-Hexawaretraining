@@ -1,0 +1,84 @@
+namespace ClassAssignments
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int x;
+            int y;
+            Console.WriteLine("Enter num 1 and num2 :");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            if (x == y)
+            {
+                Console.WriteLine("{0} and {1} are same", x, y);
+            }
+            else
+            {
+                Console.WriteLine("{0} and {1} are not same", x, y);
+            }
+            Console.WriteLine(x == y ? string.Format("{0} and {1} are equal", x, y) : string.Format("{0} and {1} are not equal", x, y));
+            Console.WriteLine(x == y ? $"{x} and {y} are equal" : $"{x} and {y} are not equal", x, y);
+            CheckPosNeg();
+            ArithemeticOperations();
+            MultiplicationTab();
+            SumTriple();
+            Console.Read();
+
+        }
+        public static void CheckPosNeg()
+        {
+            Console.WriteLine("Enter the number to check :");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(x >= 0 ? $"{x} is a positive number " : $"{x} is a negative number");
+        } 
+        public static void ArithemeticOperations()
+        {
+            Console.WriteLine("Enter the num 1 ,opeartion to be performed ,num 2 :");
+            int x = Convert.ToInt32(Console.ReadLine());
+            char o = Console.ReadLine()[0];
+            int y = Convert.ToInt32(Console.ReadLine());
+            switch (o)
+            {
+                case '+': 
+                    Console.WriteLine($"{x} {o} {y} = {x + y}");
+                    break;
+                case '-':
+                    Console.WriteLine($"{x} {o} {y} = {x - y}");
+                    break;
+                case '*':
+                    Console.WriteLine($"{x} {o} {y} = {x * y}");
+                    break;
+                case '/':
+                    Console.WriteLine($"{x} {o} {y} = {x / y}");
+                    break;
+            }
+
+        }
+        public static void MultiplicationTab()
+        {
+            Console.WriteLine("Enter a num to get its multiplication table : ");
+            int x= Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{x} * {i} = {x*i}");
+            }
+
+        }
+        public static void SumTriple()
+        {
+            Console.WriteLine("Enter a num 1 and num 2 : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int y = Convert.ToInt32(Console.ReadLine());
+            if (x != y)
+            {
+                Console.WriteLine($"Sum of {x} and {y} is {x + y}");
+            }
+            else
+            {
+                Console.WriteLine($"Triple of the sum of {x} and {y} is {3 * (x + y)}");
+            }
+        }
+    }
+}
