@@ -1,0 +1,130 @@
+namespace ClassAssignments
+{
+
+    internal class Assignment2
+    {
+        public static void Swap()
+        {
+            Console.WriteLine("Enter num1 and num2 :");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"num1 : {x} and num2 : {y}");
+            int temp = x;
+            x = y;
+            y = temp;
+            Console.WriteLine($"num1 : {x} and num2 : {y}");
+        }
+        public static void Dispay4times()
+        {
+            Console.WriteLine("Enter a number : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i <= 4; i++)
+            //{
+            //    for (int j = 0; j < 4; j++)
+            //    {
+            //        Console.Write(x + " ");
+            //    }
+            //    Console.WriteLine();
+
+            //    for (int j = 0; j < 4; j++)
+            //    {
+            //        Console.Write(x);
+            //    }
+            //    Console.WriteLine();
+            //}
+            Console.WriteLine("{0} {0} {0} {0}",x);
+            Console.WriteLine("{0}{0}{0}{0}",x);
+            Console.WriteLine("{0} {0} {0} {0}",x);
+            Console.WriteLine("{0}{0}{0}{0}",x);
+        }
+        public static void DayName()
+        {
+            Console.WriteLine("Enter a number (1-7) :");
+            int x= Convert.ToInt32(Console.ReadLine());
+            switch (x)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid number");
+                    break ;
+            }
+        }
+        public static void ArrayQues()
+        {
+            int []arr = { 2, 7, 3, 9, 1 };
+            int sum=0;
+            int max = int.MinValue;
+            int min=int.MaxValue;
+            for(int i = 0; i < arr.Length; i++)
+            {
+                sum=sum+arr[i];
+                max = int.Max(arr[i], max);
+                min=int.Min(arr[i], min);
+            }
+            int avg=sum/arr.Length;
+            Console.WriteLine("Average value of array : avg");
+            Console.WriteLine($"Max : {max} , Min : {min}");
+        }
+        public static void ArrayQues2()
+        {
+            int[] arr=new int[10];
+            //int max=int.MinValue;
+            //int min=int.MaxValue;
+            int min, max;
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+                sum = sum + arr[i];
+                //max = int.Max(arr[i], max);
+                //min = int.Min(arr[i], min);
+            }
+            Array.Sort(arr);
+            int avg = sum / (arr.Length - 1);
+            Console.WriteLine($"Total : {sum}");
+            Console.WriteLine($"Average value of array : {avg}");
+            Console.WriteLine($"Max : {arr[arr.Length-1]} , Min : {arr[0]}");
+
+            for(int i = 0;i < arr.Length; i++)
+            {
+                Console.Write(arr[i] +" ");
+            }
+
+        }
+        public static void CopyArray()
+        {
+            int[] arr = { 2, 7, 3, 9, 1 };
+            int[] copyarr= new int[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                copyarr[i]= arr[i];
+            }
+            for (int i = 0; i < copyarr.Length; i++)
+            {
+                Console.Write(copyarr[i] + " ");
+            }
+        }
+
+    }
+}
