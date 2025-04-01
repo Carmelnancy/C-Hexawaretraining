@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassAssignments
+{
+    class Employee
+    {
+        protected int id;
+        protected String name;
+        protected DateOnly dob;
+        protected double salary;
+        public Employee(int id,String name,DateOnly dob,double salary) {
+            this.id = id;
+            this.name = name;
+            this.dob = dob;
+            this.salary = salary;
+        }
+
+        public virtual double ComputeSalary()
+        {
+            return salary;
+        }
+    }
+    class Manager : Employee
+    {
+
+        //int id;
+        //String name;
+        //DateOnly dob;
+        //double salary;
+        protected double onsite_allowance;
+        protected double bonus;
+        public Manager(int id, string name, DateOnly dob, double salary,double onsite_allowance,double bonus) : base(id, name, dob, salary)
+        {
+            this.onsite_allowance = onsite_allowance;
+            this.bonus = bonus;
+        }
+
+        public override double ComputeSalary()
+        {
+            return onsite_allowance + bonus + salary;
+        }
+    }
+       class Pro
+    {
+        static int count = 0;
+        static void Main(String[] args)
+        {
+            Employee emp = new Employee(1, "Carmel", new DateOnly(2003, 01, 28), 60000);
+            Manager manager = new Manager(2, "Nancy", new DateOnly(2003, 01, 28), 30000, 5000, 10000);
+
+            Console.WriteLine(emp.ComputeSalary());
+            Console.WriteLine(manager.ComputeSalary());
+
+            CountFunction();
+            CountFunction();
+            CountFunction();
+
+            DisplayCount();
+        }
+//Assignment 2:Static
+        public static void CountFunction()
+        {
+            count++; 
+        }
+        public static void DisplayCount()
+        {
+            Console.WriteLine(count);
+        }
+    }
+
+
+}
