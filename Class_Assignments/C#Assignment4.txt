@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassAssignments
+{
+    internal class TimePeriod
+    {
+        private double time;
+
+        public double Time { get { return time; } set { time = value / 3600; } }
+
+    }
+    internal class Assignment4
+    {
+        static void Main(string[] args)
+        {
+            TimePeriod timeInSec = new TimePeriod();
+            timeInSec.Time = 46000;
+            Console.WriteLine(timeInSec.Time);
+
+            Chair c=new Chair("teak wood","brown",4);
+            BookShelf b=new BookShelf(6,"wood","grey");
+
+            c.displayDetails();
+            b.displayDetails();
+
+            Console.ReadKey();
+        }
+    }
+
+    abstract class Furniture
+    {
+        public string material;
+        public string colour;
+
+        public Furniture(string material, string colour)
+        {
+            this.material = material;
+            this.colour = colour;
+        }
+
+        public abstract void displayDetails();
+
+    }
+    class Chair : Furniture
+    {
+        public int leg;
+        public Chair(String material, String colour, int leg) : base(material, colour)
+        {
+            this .leg = leg;
+        }
+
+        public override void displayDetails()
+        {
+            Console.WriteLine($"Material : {material} ,Colour : {colour} , Legs : {leg}");
+        }
+    }
+    class BookShelf : Furniture 
+    {
+        public int rows;
+
+        public BookShelf(int rows,string material,String colour) : base(material, colour)
+        {
+            this.rows = rows;
+        }
+
+        public override void displayDetails()
+        {
+            Console.WriteLine($"Material : {material} ,Colour : {colour} , Rows : {rows}");
+        }
+    }
+
+}
