@@ -29,9 +29,9 @@ namespace ClassAssignments
             //c.displayDetails();
             //b.displayDetails();
 
-            StringHw.StringL();
-            StringHw.StringR();
-            StringHw.StringC();
+            //StringHw.StringL();
+            //StringHw.StringR();
+            //StringHw.StringC();
 
             Student s = new Student(1, "Nancy", "10th", 8, "ECE");
             s.getMarks();
@@ -42,6 +42,16 @@ namespace ClassAssignments
 
             ds.ShowDetails();
             rs.ShowDetails();
+
+            try
+            {
+                BankAccount b = new BankAccount("Nancy", 50000);
+                b.TransferAmount();
+            }
+            catch(InsufficientBalamceException e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.ReadKey();
         }
@@ -145,6 +155,7 @@ namespace ClassAssignments
         {
             for (int i = 0; i < marks.Length; i++)
             {
+                Console.WriteLine("enter the mark of sub "+(i+1));
                 marks[i]=int.Parse(Console.ReadLine());
             } 
         }
@@ -158,7 +169,7 @@ namespace ClassAssignments
                     result = true;
                 sum += marks[i];
             }
-            double avg=sum/marks.Length;
+            double avg=(double)sum/marks.Length;
             if (result || avg < 50)
             {
                 Console.WriteLine("Failed");
@@ -225,5 +236,35 @@ namespace ClassAssignments
         }
     }
 
-}
+    // User Exception
+    class InsufficientBalamceException : ApplicationException
+    {
+        public InsufficientBalamceException(string  message) : base(message) { }
+    }
 
+    class BankAccount
+    {
+        public string AccountHolder { get; set; }
+        public double Balance { get; private set; }
+
+        public BankAccount(string accountHolder, double balance)
+        {
+            AccountHolder = accountHolder;
+            Balance = balance;
+        }
+
+        public void TransferAmount()
+        {
+            Console.WriteLine("Enter the amount to transfer :");
+            double x = Convert.ToDouble(Console.ReadLine());
+            if (x > Balance)
+            {
+                throw (new InsufficientBalamceException("You don't have enough balance to transfer the amount"));
+            }
+            else
+            {
+                Console.WriteLine("Transaction made successfully");
+            }
+        }
+    }
+}
