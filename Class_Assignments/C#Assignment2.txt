@@ -3,6 +3,7 @@ namespace ClassAssignments
 
     internal class Assignment2
     {
+// 1
         public static void Swap()
         {
             Console.WriteLine("Enter num1 and num2 :");
@@ -15,6 +16,7 @@ namespace ClassAssignments
             y = temp;
             Console.WriteLine($"num1 : {x} and num2 : {y}");
         }
+// 2
         public static void Dispay4times()
         {
             Console.WriteLine("Enter a number : ");
@@ -38,6 +40,7 @@ namespace ClassAssignments
             Console.WriteLine("{0} {0} {0} {0}",x);
             Console.WriteLine("{0}{0}{0}{0}",x);
         }
+// 3
         public static void DayName()
         {
             Console.WriteLine("Enter a number (1-7) :");
@@ -70,6 +73,7 @@ namespace ClassAssignments
                     break ;
             }
         }
+// 4
         public static void ArrayQues()
         {
             int []arr = { 2, 7, 3, 9, 1 };
@@ -86,6 +90,7 @@ namespace ClassAssignments
             Console.WriteLine("Average value of array : avg");
             Console.WriteLine($"Max : {max} , Min : {min}");
         }
+// 5
         public static void ArrayQues2()
         {
             int[] arr=new int[10];
@@ -112,6 +117,7 @@ namespace ClassAssignments
             }
 
         }
+// 6
         public static void CopyArray()
         {
             int[] arr = { 2, 7, 3, 9, 1 };
