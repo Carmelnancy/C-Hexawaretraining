@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassAssignments
 {
+// Day 4
+// Assignment 1 : Inheritance
     class Employee
     {
         protected int id;
@@ -61,7 +63,7 @@ namespace ClassAssignments
 
             DisplayCount();
         }
-//Assignment 2:Static
+//Assignment 2 : static
         public static void CountFunction()
         {
             count++; 
