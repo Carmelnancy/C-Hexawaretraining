@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClassAssignments
 {
+
     internal class TimePeriod
     {
         private double time;
@@ -19,30 +20,30 @@ namespace ClassAssignments
     {
         static void Main(string[] args)
         {
-            //TimePeriod timeInSec = new TimePeriod();
-            //timeInSec.Time = 46000;
-            //Console.WriteLine(timeInSec.Time);
-
-            //Chair c=new Chair("teak wood","brown",4);
-            //BookShelf b=new BookShelf(6,"wood","grey");
-
-            //c.displayDetails();
-            //b.displayDetails();
-
-            //StringHw.StringL();
-            //StringHw.StringR();
-            //StringHw.StringC();
-
+// 1 Convert time
+            TimePeriod timeInSec = new TimePeriod();
+            timeInSec.Time = 46000;
+            Console.WriteLine(timeInSec.Time);
+// 2 Furniture
+            Chair c=new Chair("teak wood","brown",4);
+            BookShelf b=new BookShelf(6,"wood","grey");
+            c.displayDetails();
+            b.displayDetails();
+// Strings
+            StringHw.StringL();
+            StringHw.StringR();
+            StringHw.StringC();
+// Inheritance
             Student s = new Student(1, "Nancy", "10th", 8, "ECE");
             s.getMarks();
             s.DisplayData();
-
+// Interface
             DayScholar ds = new DayScholar(1, "Alice", 5000);
             Resident rs = new Resident(2, "Bob", 5000, 3000);
 
             ds.ShowDetails();
             rs.ShowDetails();
-
+// user exception
             try
             {
                 BankAccount b = new BankAccount("Nancy", 50000);
