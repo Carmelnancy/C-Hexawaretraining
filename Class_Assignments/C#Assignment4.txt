@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,15 +19,29 @@ namespace ClassAssignments
     {
         static void Main(string[] args)
         {
-            TimePeriod timeInSec = new TimePeriod();
-            timeInSec.Time = 46000;
-            Console.WriteLine(timeInSec.Time);
+            //TimePeriod timeInSec = new TimePeriod();
+            //timeInSec.Time = 46000;
+            //Console.WriteLine(timeInSec.Time);
 
-            Chair c=new Chair("teak wood","brown",4);
-            BookShelf b=new BookShelf(6,"wood","grey");
+            //Chair c=new Chair("teak wood","brown",4);
+            //BookShelf b=new BookShelf(6,"wood","grey");
 
-            c.displayDetails();
-            b.displayDetails();
+            //c.displayDetails();
+            //b.displayDetails();
+
+            StringHw.StringL();
+            StringHw.StringR();
+            StringHw.StringC();
+
+            Student s = new Student(1, "Nancy", "10th", 8, "ECE");
+            s.getMarks();
+            s.DisplayData();
+
+            DayScholar ds = new DayScholar(1, "Alice", 5000);
+            Resident rs = new Resident(2, "Bob", 5000, 3000);
+
+            ds.ShowDetails();
+            rs.ShowDetails();
 
             Console.ReadKey();
         }
@@ -73,4 +89,141 @@ namespace ClassAssignments
         }
     }
 
+    class StringHw
+    {
+        public static void StringL()
+        {
+            Console.WriteLine("Enter your name : ");
+            string name = Console.ReadLine();
+            Console.WriteLine($"The length of your name {name} is " + name.Length);
+        }
+        public static void StringR()
+        {
+            Console.WriteLine("Enter a string : ");
+            string name = Console.ReadLine();
+            char[] chars = name.ToCharArray();
+            Array.Reverse(chars);
+            Console.WriteLine("Reversed String is "+new string(chars));
+
+        }
+
+        public static void StringC()
+        {
+            Console.WriteLine("Enter str1 :");
+            string str1 = Console.ReadLine();
+            Console.WriteLine("Enter str2 :");
+            string str2 = Console.ReadLine();
+            if (str1.Equals(str2))
+            {
+                Console.WriteLine("Equal");
+            }
+            else
+            {
+                Console.WriteLine("Not equal");
+            }
+        }
+    }
+    class Student
+    {
+        public int rollno;
+        public string name;
+        public string _class;
+        public int sem;
+        public string branch;
+        public int[] marks=new int[5];
+
+        public Student(int rollno, string name, string _class,int sem,string branch)
+        {
+            this.rollno = rollno;
+            this.name = name;
+            this._class = _class;
+            this.sem = sem;
+            this.branch = branch;
+        }
+
+        public void getMarks()
+        {
+            for (int i = 0; i < marks.Length; i++)
+            {
+                marks[i]=int.Parse(Console.ReadLine());
+            } 
+        }
+        public void DisplayResult()
+        {
+            int sum = 0;
+            bool result=false;
+            for (int i = 0; i < marks.Length; i++)
+            {
+                if (marks[i] < 35)
+                    result = true;
+                sum += marks[i];
+            }
+            double avg=sum/marks.Length;
+            if (result || avg < 50)
+            {
+                Console.WriteLine("Failed");
+            }
+            else
+            {
+                Console.WriteLine("Pass");
+            }
+        }
+        public void DisplayData()
+        {
+            Console.WriteLine("Roll No : "+rollno);
+            Console.WriteLine("Name : " + name);
+            Console.WriteLine("Class : "+_class);
+            Console.WriteLine("Semester : "+sem);
+            Console.WriteLine("Branch : "+branch);
+            DisplayResult();
+        }
+    }
+    interface IStudent
+    {
+        int id { get; set; }
+        string name { get; set; }
+        double fees { get; set; }
+        void ShowDetails();
+    }
+
+    class DayScholar : IStudent 
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public double fees { get; set; }
+        public DayScholar(int id, string name, double fees)
+        {
+            this.id = id;
+            this.name = name;
+            this.fees = fees;
+        }
+        public void ShowDetails()
+        {
+            Console.WriteLine("Id " + id);
+            Console.WriteLine("Name " + name);
+            Console.WriteLine("Fees " + fees);
+        }
+    }
+    class Resident : IStudent 
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public double fees { get; set; }
+        public double accomodation { get; set; }
+        public Resident(int id, string name, double fees,double accomodation)
+        {
+            this.id = id;
+            this.name = name;
+            this.fees = fees;
+            this.accomodation = accomodation;
+        }
+        public void ShowDetails()
+        {
+            Console.WriteLine("Id "+id);
+            Console.WriteLine("Name "+name);
+            Console.WriteLine("Fees "+(fees+accomodation));
+        }
+    }
+
 }
+
