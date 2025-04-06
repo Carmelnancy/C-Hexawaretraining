@@ -74,7 +74,7 @@ namespace StudentInformationSystem.Main
                 Console.WriteLine("1. Add Student");
                 Console.WriteLine("2. Update Student");
                 Console.WriteLine("3. List All Students");
-                //Console.WriteLine("4. Delete Student");
+                //Console.WriteLine("4. Delete Student");    // there is no task given to delete
                 Console.WriteLine("5. Back to Main Menu");
 
                 Console.Write("Enter your choice: ");
@@ -121,7 +121,7 @@ namespace StudentInformationSystem.Main
                         StudentDao.GetAllStudents();
                         break;
                     //case 4:
-                    //    StudentDao.DeleteStudent();
+                    //    StudentDao.DeleteStudent();  
                         break;
                     case 5:
                         return;
@@ -140,7 +140,7 @@ namespace StudentInformationSystem.Main
                 Console.WriteLine("1. Add Teacher");
                 Console.WriteLine("2. Update Teacher");
                 Console.WriteLine("3. List All Teachers");
-                //Console.WriteLine("4. Delete Teacher");
+                //Console.WriteLine("4. Delete Teacher");     // there is no task given to delete
                 Console.WriteLine("5. Back to Main Menu");
 
                 Console.Write("Enter your choice: ");
@@ -194,7 +194,7 @@ namespace StudentInformationSystem.Main
                 Console.WriteLine("1. Add Course");
                 Console.WriteLine("2. Update Course");
                 Console.WriteLine("3. List All Courses");
-                //Console.WriteLine("4. Delete Course");
+                //Console.WriteLine("4. Delete Course");      // there is no task given to delete
                 Console.WriteLine("5. Back to Main Menu");
 
                 Console.Write("Enter your choice: ");
