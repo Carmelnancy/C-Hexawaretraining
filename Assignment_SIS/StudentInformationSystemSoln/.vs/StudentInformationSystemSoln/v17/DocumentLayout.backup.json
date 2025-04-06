@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\main\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\main\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\sisclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\sisclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\enrollments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\enrollments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\entity\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\entity\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\exceptions\\invalidstudentdataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\exceptions\\invalidstudentdataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|c:\\users\\carmel nancy\\source\\repos\\studentinformationsystemsoln\\studentinformationsystem\\dao\\paymentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657ABB4C-7EAA-4C80-97F6-DB5E2AC8199B}|StudentInformationSystem\\StudentInformationSystem.csproj|solutionrelative:studentinformationsystem\\dao\\paymentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payments.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Payments.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\Payments.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Payments.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\Payments.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T16:01:47.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SISClass.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\SISClass.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\SISClass.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\SISClass.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\SISClass.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAawGkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T07:16:20.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Teacher.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\Teacher.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Teacher.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\Teacher.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T07:05:02.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaymentDao.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Dao\\PaymentDao.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Dao\\PaymentDao.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Dao\\PaymentDao.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Dao\\PaymentDao.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T06:37:27.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Courses.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\Courses.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Courses.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\Courses.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA0wCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T05:39:01.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Students.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Students.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\Students.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Students.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\Students.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBoAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T05:38:46.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enrollments.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Enrollments.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Entity\\Enrollments.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Entity\\Enrollments.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Entity\\Enrollments.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T05:38:23.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainClass.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Main\\MainClass.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Main\\MainClass.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Main\\MainClass.cs*",
+              "RelativeToolTip": "StudentInformationSystem\\Main\\MainClass.cs*",
+              "ViewState": "AgIAABQCAAAAAAAAAAAAACoCAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T18:05:44.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvalidStudentDataException.cs",
+              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Exceptions\\InvalidStudentDataException.cs",
+              "RelativeDocumentMoniker": "StudentInformationSystem\\Exceptions\\InvalidStudentDataException.cs",
+              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\StudentInformationSystemSoln\\StudentInformationSystem\\Exceptions\\InvalidStudentDataException.cs",
+              "RelativeToolTip": "StudentInformationSystem\\Exceptions\\InvalidStudentDataException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T08:59:14.9Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
