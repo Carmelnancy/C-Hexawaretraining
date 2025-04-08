@@ -40,7 +40,7 @@ namespace StudentInformationSystem.Dao
             try
             {
                 con = DBConnection.GetConnection();
-                cmd = new SqlCommand("insert into Courses values (@Cn,@credts,@tid)", con);
+                cmd = new SqlCommand("insert into Courses values (@Cn,@credits,@tid)", con);
                 //dr = cmd.ExecuteReader();
 
                 cmd.Parameters.AddWithValue("Cn", c.courseName);
