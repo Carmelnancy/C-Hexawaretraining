@@ -42,7 +42,7 @@ namespace StudentInformationSystem.Dao
             try
             {
                 con = DBConnection.GetConnection();
-                cmd = new SqlCommand("insert into Students values (@FirstName, @LastName, @DOB, @Email, @Phone)", con);
+                cmd = new SqlCommand("insert into Students values (@FirstName, @LastName, @DOB, @Email, @Phone,@bal)", con);
                 //dr = cmd.ExecuteReader();
 
                 cmd.Parameters.AddWithValue("FirstName",s.firstName);
@@ -50,7 +50,7 @@ namespace StudentInformationSystem.Dao
                 cmd.Parameters.AddWithValue("DOB", s.dateOfBirth.ToDateTime(TimeOnly.MinValue));
                 cmd.Parameters.AddWithValue("Email",s.email);
                 cmd.Parameters.AddWithValue("Phone", s.phone);
-                //cmd.Parameters.AddWithValue("did", deptid);
+                cmd.Parameters.AddWithValue("bal", s.balance);
 
                 int count=cmd.ExecuteNonQuery();
                 if (count > 0)
