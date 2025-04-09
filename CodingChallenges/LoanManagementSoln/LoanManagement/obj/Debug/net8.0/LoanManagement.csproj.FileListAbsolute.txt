@@ -1,0 +1,5 @@
+C:\Users\CARMEL NANCY\source\repos\LoanManagementSoln\LoanManagement\obj\Debug\net8.0\LoanManagement.csproj.AssemblyReference.cache
+C:\Users\CARMEL NANCY\source\repos\LoanManagementSoln\LoanManagement\obj\Debug\net8.0\LoanManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CARMEL NANCY\source\repos\LoanManagementSoln\LoanManagement\obj\Debug\net8.0\LoanManagement.AssemblyInfoInputs.cache
+C:\Users\CARMEL NANCY\source\repos\LoanManagementSoln\LoanManagement\obj\Debug\net8.0\LoanManagement.AssemblyInfo.cs
+C:\Users\CARMEL NANCY\source\repos\LoanManagementSoln\LoanManagement\obj\Debug\net8.0\LoanManagement.csproj.CoreCompileInputs.cache
