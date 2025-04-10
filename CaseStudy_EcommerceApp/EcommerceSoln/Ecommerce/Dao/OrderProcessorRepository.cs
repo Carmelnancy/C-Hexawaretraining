@@ -21,5 +21,7 @@ namespace Ecommerce.Dao
         bool placeOrder(Customer customer, Dictionary<Product, int> products, string shippingAddress);
 
         Dictionary<Product, int> getOrdersByCustomer(int customerId);
+        List<Product> getAllProducts();
+        bool updateCustomer(Customer updatedCust);
     }
 }

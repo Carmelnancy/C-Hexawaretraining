@@ -10,13 +10,13 @@ namespace Ecommerce.Model
     {
         private int productId;
         private string name;
-        private int price;
+        private decimal price;
         private string description;
         private int stockQuantity;
 
         public Product() { }
 
-        public Product(int productId, string name, int price, string description, int stockQuantity)
+        public Product(int productId, string name, decimal price, string description, int stockQuantity)
         {
             this.productId = productId;
             this.name = name;
@@ -27,7 +27,7 @@ namespace Ecommerce.Model
 
         public int ProductId { get => productId; set => productId = value; }
         public string Name { get => name; set => name = value; }
-        public int Price { get => price; set => price = value; }
+        public decimal Price { get => price; set => price = value; }
         public string Description { get => description; set => description = value; }
         public int StockQuantity { get => stockQuantity; set => stockQuantity = value; }
     }

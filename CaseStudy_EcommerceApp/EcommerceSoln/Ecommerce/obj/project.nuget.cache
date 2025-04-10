@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pZVNwuCPNm8=",
+  "dgSpecHash": "0vrX1ix7ESo=",
   "success": true,
-  "projectFilePath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
+  "projectFilePath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
