@@ -89,9 +89,3 @@ insert into order_items (order_id, product_id, quantity) values
 (3, 3, 1),
 (4, 4, 1),
 (5, 5, 1);
-
-
-
-
-DELETE FROM products WHERE product_id BETWEEN 14 AND 28;
-
