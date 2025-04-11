@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\",
+  "WorkspaceRootPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\users\\carmel nancy\\source\\repos\\ecommercesoln\\ecommerce\\main\\ecomapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\c#hexawaretraining\\casestudy_ecommerceapp\\ecommercesoln\\ecommerce\\main\\ecomapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\main\\ecomapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\users\\carmel nancy\\source\\repos\\ecommercesoln\\ecommerce\\ecommerce.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\ecommerce.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\c#hexawaretraining\\casestudy_ecommerceapp\\ecommercesoln\\ecommerce\\dao\\orderprocessorrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dao\\orderprocessorrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1424783-2A34-42F4-BCAA-874AA4FE7AB1}|Testing\\Ecommerce.Test.csproj|c:\\users\\carmel nancy\\source\\repos\\ecommercesoln\\testing\\orderprocessortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F1424783-2A34-42F4-BCAA-874AA4FE7AB1}|Testing\\Ecommerce.Test.csproj|c:\\c#hexawaretraining\\casestudy_ecommerceapp\\ecommercesoln\\testing\\orderprocessortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1424783-2A34-42F4-BCAA-874AA4FE7AB1}|Testing\\Ecommerce.Test.csproj|solutionrelative:testing\\orderprocessortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\users\\carmel nancy\\source\\repos\\ecommercesoln\\ecommerce\\dao\\orderprocessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dao\\orderprocessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\c#hexawaretraining\\casestudy_ecommerceapp\\ecommercesoln\\ecommerce\\ecommerce.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\ecommerce.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\users\\carmel nancy\\source\\repos\\ecommercesoln\\ecommerce\\dao\\orderprocessorrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dao\\orderprocessorrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|c:\\c#hexawaretraining\\casestudy_ecommerceapp\\ecommercesoln\\ecommerce\\dao\\orderprocessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9DCC2E-9ABF-49D4-BDD1-B9BFE315EC6D}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dao\\orderprocessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +34,22 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Ecommerce",
-              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
+              "DocumentMoniker": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
               "RelativeDocumentMoniker": "Ecommerce\\Ecommerce.csproj",
-              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
+              "ToolTip": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
               "RelativeToolTip": "Ecommerce\\Ecommerce.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-10T16:23:48.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T16:23:48.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OrderProcessorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepository.cs",
+              "DocumentMoniker": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepository.cs",
               "RelativeDocumentMoniker": "Ecommerce\\Dao\\OrderProcessorRepository.cs",
-              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepository.cs",
+              "ToolTip": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepository.cs",
               "RelativeToolTip": "Ecommerce\\Dao\\OrderProcessorRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,11 +59,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EcomApp.cs",
-              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Main\\EcomApp.cs",
+              "DocumentMoniker": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Main\\EcomApp.cs",
               "RelativeDocumentMoniker": "Ecommerce\\Main\\EcomApp.cs",
-              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Main\\EcomApp.cs",
+              "ToolTip": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Main\\EcomApp.cs",
               "RelativeToolTip": "Ecommerce\\Main\\EcomApp.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAANsAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T14:55:47.66Z",
               "EditorCaption": ""
@@ -73,26 +72,27 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "OrderProcessorTests.cs",
-              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\OrderProcessorTests.cs",
+              "DocumentMoniker": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\OrderProcessorTests.cs",
               "RelativeDocumentMoniker": "Testing\\OrderProcessorTests.cs",
-              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\OrderProcessorTests.cs",
+              "ToolTip": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\OrderProcessorTests.cs",
               "RelativeToolTip": "Testing\\OrderProcessorTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwBQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T14:00:22.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "OrderProcessorRepositoryImpl.cs",
-              "DocumentMoniker": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
               "RelativeDocumentMoniker": "Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
-              "ToolTip": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
+              "ToolTip": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
               "RelativeToolTip": "Ecommerce\\Dao\\OrderProcessorRepositoryImpl.cs",
-              "ViewState": "AgIAAEkBAAAAAAAAAAAuwHQBAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAANwAAAAAAAAAAAAmwHQBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T14:00:13.451Z"
+              "WhenOpened": "2025-04-10T14:00:13.451Z",
+              "EditorCaption": ""
             }
           ]
         }

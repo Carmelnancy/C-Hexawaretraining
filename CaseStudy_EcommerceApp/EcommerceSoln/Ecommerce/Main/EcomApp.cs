@@ -217,7 +217,7 @@ namespace Ecommerce.Main
                                 Console.WriteLine("Available Products:");
                                 foreach (var p in products)
                                 {
-                                    Console.WriteLine($"ID: {p.ProductId}, Name: {p.Name}, Price: ₹{p.Price}, Stock: {p.StockQuantity}, Description: {p.Description}");
+                                    Console.WriteLine($"ID: {p.ProductId}, Name: {p.Name}, Price: {p.Price}, Stock: {p.StockQuantity}, Description: {p.Description}");
                                 }
                             }
                             break;

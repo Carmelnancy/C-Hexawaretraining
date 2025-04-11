@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj": {}
+    "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj": {
+    "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
+        "projectUniqueName": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
         "projectName": "Ecommerce",
-        "projectPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
+        "projectPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj",
         "packagesPath": "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\obj\\",
+        "outputPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj": {
+    "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
+        "projectUniqueName": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
         "projectName": "Ecommerce.Test",
-        "projectPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
+        "projectPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
         "packagesPath": "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\obj\\",
+        "outputPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +103,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj": {
-                "projectPath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj"
+              "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj": {
+                "projectPath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Ecommerce\\Ecommerce.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v/c1dveAev0=",
+  "dgSpecHash": "9i1ObvOu9jk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CARMEL NANCY\\source\\repos\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
+  "projectFilePath": "C:\\C#HexawareTraining\\CaseStudy_EcommerceApp\\EcommerceSoln\\Testing\\Ecommerce.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\CARMEL NANCY\\.nuget\\packages\\microsoft.codecoverage\\17.13.0\\microsoft.codecoverage.17.13.0.nupkg.sha512",
